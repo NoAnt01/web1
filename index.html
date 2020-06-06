@@ -4,6 +4,10 @@
   <title>WEB1 - Welcome</title>
   <meta charset="utf-8">
   <style>
+    #grid{
+      display:grid;
+      grid-template-columns: 150px 1fr;
+    }
     a {
       color:black;
       text-decoration: none;
@@ -12,16 +16,23 @@
     h1 {
       font-size:45px;
       text-align: center;
+      border-bottom:3px solid black;
+      margin:0px;
+      padding:20px;
     }
-    h2 {
-      font-size:25px;
+    ol{
+      border-right:3px solid black;
+      width:50px;
+      margin-top:0px;
+      padding-left:40px;
+      padding-right:22px;
+      padding-top:20px;
     }
-    h3 {
-      font-size: 20px;
-      text-align: center;
+    body {
+      margin:0px;
     }
     .profile {
-      text-align: center;
+      margin-left:1px;
     }
     .date {
       text-align: right;
@@ -29,17 +40,20 @@
   </style><!--스타일태그--><!--태그>클래스>id--><!--id는 증복x-->
 </head>
 <body>
-  <h1><a href="index.html" style="color:red">Main</a></h1><!--스타일속성-->
- <h2>5 people</h2>
+  <h1><a href="index.html">Main</a></h1><!--스타일속성-->
+<div id="grid">
   <ol>
-    <li><a href="1.html" title="장진혁">장진혁</a></li>
-    <li><a href="2.html" title="김선우">김선우</a></li>
-    <li><a href="3.html" title="조재현">조재현</a></li>
-    <li><a href="4.html" title="조아은">조아은</a></li>
-    <li><a href="5.html" title="박현승">박현승</a></li>
+      <li style="height: 30px"><a href="1.html" title="장진혁">장진혁</a></li>
+      <li style="height: 30px"><a href="2.html" title="김선우">김선우</a></li>
+      <li style="height: 30px"><a href="3.html" title="조재현">조재현</a></li>
+      <li style="height: 30px"><a href="4.html" title="조아은">조아은</a></li>
+      <li style="height: 30px"><a href="5.html" title="박현승">박현승</a></li>
   </ol>
-  <h3>HTML</h3>
-  <p class="profile">HTML 연습</p>
-  <p class="date">Start : 2020/06/04(thu)</p>
+  <div>
+    <h2>HTML</h2>
+    <p class="profile">HTML 연습</p>
+      <p class="date">Start : 2020/06/04(thu)</p>
+  </div>
+</div>
 </body>
 </html>
